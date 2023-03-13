@@ -1,0 +1,24 @@
+
+*{
+    font-family: DBScreenSans,Helvetica Neue,arial,sans-serif;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background:#f21515;
+    color: white;
+    font-size: 30px;
+    border: black;
+    border-radius: 33%;
+    border-style: inset;
+
+  }
+
+.textfield {
+    padding : 4px;
+    margin : 3px;
+    text-align: left;
+    text-align: center;
+
+}
