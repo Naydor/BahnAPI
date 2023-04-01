@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Deutsche Bahn API Website</title>
 	<link rel="stylesheet" href="stylesheet.css">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,28 @@
 	<title>Document</title>
 </head>
 <body>
-
-	<div class="header">
-		<h1>Fahrplan DB</h1>
-		<p>Vom Krassen Bahnhof XY</p>
-	  </div>
-
-	<div class="textfield">
-		
-		<label for="Bahnhof">Bahnhof suchen:</label>
-		<input type="text" id="fname" name="Bahnhof">
-		<br>
-		<label for="Datum">Abfahrtsdatum:</label>
-		<input type="text" id="fname" name="Datum">
+    <h1>Deutsche Bahn API Website</h1>
+    <form>
+      <label for="bahnhof">Bahnhof:</label>
+      <input type="text" id="bahnhof" name="bahnhof">
+      <br><br>
+      <label for="datum">Datum:</label>
+      <input type="date" id="datum" name="datum">
+      <br><br>
+      <label for="abfahrt">Abfahrt:</label>
+      <input type="radio" id="abfahrt" name="typ" value="abfahrt">
+      <label for="ankunft">Ankunft:</label>
+      <input type="radio" id="ankunft" name="typ" value="ankunft">
+      <br><br>
+      <button type="button" onclick="suchen()">Suchen</button>
+    </form>
+    <br><br>
+    <div id="ergebnisse"></div>
+    <br><br>
+    <button type="button" onclick="fahrstuhl()">Fahrstuhl?</button>
+    <div id="fahrstuhl"></div>
+    <script src="script.js"></script>
 	</div>  
 </html>
+
 

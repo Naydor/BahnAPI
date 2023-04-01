@@ -3,22 +3,38 @@
     font-family: DBScreenSans,Helvetica Neue,arial,sans-serif;
 }
 
-.header {
+
+  /* background:#f21515; */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    }
+    h1 {
+    text-align: center;
+    }
+    form {
+    margin: 0 auto;
+    width: 50%;
+    }
+    label {
+    display: block;
+    font-weight: bold;
+    }
+    input[type=text], input[type=date] {
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    }
+    button {
     padding: 10px;
-    text-align: center;
-    background:#f21515;
-    color: white;
-    font-size: 30px;
-    border: black;
-    border-radius: 33%;
-    border-style: inset;
-
-  }
-
-.textfield {
-    padding : 4px;
-    margin : 3px;
-    text-align: left;
-    text-align: center;
-
-}
+    background-color: #0077be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    button:hover {
+    background-color: #005ea6;
+    }
